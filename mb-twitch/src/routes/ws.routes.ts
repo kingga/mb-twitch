@@ -1,11 +1,11 @@
-import TrackController from './controllers/TrackController';
-import checkLogin from './middleware/CheckLogin';
+import TrackController from '../controllers/TrackController';
+import checkLogin from '../middleware/CheckLogin';
 
 interface Routes {
   [key: string]: CallableFunction;
 }
 
-const trackController = new TrackController();
+const trackController = new TrackController;
 
 const routes: Routes = {
   "track.state": checkLogin(trackController.stateChanged),
