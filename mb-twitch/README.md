@@ -1,7 +1,6 @@
-# Awesome Project Build with TypeORM
+# Server for Twitch Integration MusicBee Plugin
 
-Steps to run this project:
-
-1. Run `npm i` command
-2. Setup database settings inside `ormconfig.json` file
-3. Run `npm start` command
+## TODO:
+- [ ] Remove database options from this project.
+  - [X] Add in user state. This will store a username in a JSON doc which will look something like this `{"kingga": "token_here"}`. This will allow for some sort of persistent authentication (we will need to add a token/user input into the MusicBee plugin configuration UI).
+  - [X] Add a wait to refresh the token (add to plugin as well so they can do it from MusicBee).
